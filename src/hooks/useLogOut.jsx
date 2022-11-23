@@ -14,7 +14,7 @@ const useLogOut = () => {
     dispatch(updateUserInfo());
     localStorage.clear('token');
     history.push('/');
-    console.log("hi");
+    console.log('hi');
   };
 };
 
