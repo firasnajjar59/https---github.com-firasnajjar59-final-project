@@ -12,7 +12,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from "store/store"
 
-axios.defaults.baseURL = 'https://business-hackeru.herokuapp.com/api';
+axios.defaults.baseURL = 'https://api.firasnajjar.com/api';
 axios.interceptors.request.use(config=>{
   const token = localStorage.getItem("token");
   if (token) {
